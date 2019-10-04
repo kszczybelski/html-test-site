@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eyeglasses - Eyeglasses of the future</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d325b7c183.js" crossorigin="anonymous"></script>
+</head>
+<body id="home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Eyeglasses</h1>
+            <ul class="nav">
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Showcase -->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>The sight of the future</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class="btn" id="btnsection-a">Read More</a>
+            </div>
+            <img src="https://www.americasbest.com/medias/sys_master/product_images/product_images/h1a/h85/9036212994078/9036212994078.jpg" 
+            alt="Main Glasses">
+        </div>
+    </section>
+
+    <!--Overlay-->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Better eyesight with our glasses</h3>
+                <h2>With us you can see better side of life</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit 
+                    voluptatem accusantiumdoloremque laudantium, totam 
+                    rem aperiam, eaque ipsa quae ab illo inventoretatis
+                    et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemoenim ipsam voluptatem quia voluptas sit aspernatur
+                    aut odit aut fugit, sed quia consequuntur ma
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="section-c">
+        <div class="gallery">
+            <a href="./img/gallery1.jpg" class="big">
+                <img src="./img/gallery1.jpg" alt="">
+            </a>
+            <a href="./img/gallery2.jpg" class="big">
+                <img src="./img/gallery2.jpg" alt="">
+            </a>
+            <a href="./img/gallery3.jpg" class="big">
+                <img src="./img/gallery3.jpg" alt="">
+            </a>
+            <a href="./img/gallery4.jpg" class="big">
+                <img src="./img/gallery4.jpg" alt="">
+            </a>
+            <a href="./img/gallery5.jpg" class="big">
+                <img src="./img/gallery5.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h2>Loorem ipsum dolor sit</h2>
+                <a href="http://twitter.com">
+                    <i class="fab fa-twitter fa-3x"></i>
+                </a>
+                <a href="http://facebook.com">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+                <a href="http://youtube.com">
+                    <i class="fab fa-youtube fa-3x"></i>
+                </a>
+            </div>
+            <div>
+                <h3>Company info</h3>
+                <ul>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="blog">
+                <h3>Blog Posts</h3>
+                <ul>
+                    <li><a href="#">Post 1 Lorem ipsum dolor</a></li>
+                    <li><a href="#">Post 2 Lorem ipsum dolor</a></li>
+                    <li><a href="#">Post 3 Lorem ipsum dolor</a></li>
+                    <li><a href="#">Post 4 Lorem ipsum dolor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <form name="email-form" method="POST" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input type="email" name="email" id="email" size="40" 
+                            class="form-control" placeholder="Email">
+                        </span>
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function(){
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
+</body>
+</html>
