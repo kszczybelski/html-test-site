@@ -1,7 +1,7 @@
 :root{
     --primary-color:#333;
     --second-color:#444;
-    --overlay-color: rgb(0,0,0, 0.5);
+    --overlay-color: rgb(0,0,0, 0.7);
 }
 
 * {
@@ -25,6 +25,7 @@ a{
 }
 ul{
     list-style: none;
+    
 
 }
 img{
@@ -38,17 +39,31 @@ img{
 }
 /* navbar*/
 .navbar{
-     font-size: 1.5rem;
-     padding-top: 0.3rem;
-     padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    overflow: hidden;
+    background-color: var(--overlay-color);
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    color: #ccc;
+    z-index: 10;
+    
 }
 
 .navbar .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: sticky;
 }
-.navbar .logo{
-    font-size: 3rem;
+.navbar .container .logo img{
+   width: 6rem;
+   height: 4rem;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
 }
 .navbar .nav{
     justify-self: flex-end;
@@ -59,13 +74,16 @@ img{
 }
 .navbar .nav a {
     padding: 0 2rem;
+    color: #ccc;
 }
 .navbar .nav a:hover{
     color: burlywood;
 }
+
 /*section a*/
 .section-a {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+
 }
 .section-a .container{
     display: grid;
@@ -85,7 +103,7 @@ img{
 /* section b*/
 .section-b{
     position: relative;
-    background: url(../img/overlay.jpg) no-repeat bottom center/cover;
+    background: url(../img/oprawki-001.jpg) no-repeat bottom center/cover;
     height: 700px;
 }
 .section-b-inner{
@@ -201,6 +219,39 @@ img{
     cursor: pointer;
     border-radius: 0 20px 20px 0;
 }
+
+/*section-d (in about.html)*/
+.section-d{
+    margin: 2rem 0;
+
+}
+.section-d  h1{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.section-d h3{
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+.section-e{
+    max-height: 600px;
+    margin: 0 2rem;
+}
+.section-e .gallery{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    max-height: 600px;
+    
+}
+
+.section-e .gallery img, .section-e .gallery a{
+    width: 100%;
+    height: 80%;
+    
+
+}
  /*Utilities */
 .btn{
     display: inline-block;
@@ -227,7 +278,35 @@ img{
 
 /* Media Queries */
 @media(max-width: 700px){
-
+    .navbar .container .logo{
+        display: none;
+    }
+    .navbar {
+        font-size: 1rem;
+    }
+    .navbar .container{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .navbar .nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar .nav a{
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        /*min-width: 100%;
+        min-height: 100; doesnt work :( */
+        
+        font-weight: bold;
+    }
     /*section a */
     .section-a .container{
         grid-template-columns: 1fr;
@@ -243,16 +322,19 @@ img{
         width: 70%;
         margin: auto;
     }
+    .section-a h1{
+        font-size: 3rem;
+    }
     /*section b */
     .section-b-inner h2{
-        font-size: 3rem;
-        margin-top: 0.5rem;
+        font-size: 2.5rem;
+        margin-top: 0.3rem;
     }
     .section-b-inner p{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .section-b-inner h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     /*section c */
     .section-c .gallery{
